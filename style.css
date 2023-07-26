@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+
+:root {
+  --red: #fe4a49;
+  --blue: #2ab7ca;
+  --black: #020202;
+  --white: #fcfcfc;
+  --darkpurp: #4B0082;
+}
+
+
+li {
+  float: left;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+li a {
+  display: block;
+  color: var(--black);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: var(--red);
+
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  height: 750px;
+}
+
+header {
+  background-color: var(--white);
+  width: 100%;
+  height: 48px;
+  padding-right: 10px;
+  margin: 0px;
+}
+
+#typing {
+
+  width: 0ch;
+  color: var(--black);
+  float: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(22) 1s infinite alternate;
+}
+
+#typing span {
+  color: var(--red);
+}
+
+#crow {
+  float: left;
+
+  color: var(--black);
+  font-family: consolas;
+  font-weight: bold;
+  font-size: 18px;
+  animation: crow 0.5s linear 0s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes crow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.navname:hover {
+  background-color: var(--white);
+}
